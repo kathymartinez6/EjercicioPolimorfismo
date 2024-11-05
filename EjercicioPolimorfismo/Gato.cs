@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace EjercicioPolimorfismo
 {
-    internal class Gato
+    public class Gato: Animal
     {
+        public override void EmitirSonido()
+        {
+            Console.WriteLine("El gato maúlla: ¡Miau miau!");
+        }
+
+        public override void Accion()
+        {
+            Console.WriteLine("El gato se acurruca.");
+        }
     }
 }

@@ -1,14 +1,16 @@
 ﻿
 namespace EjercicioPolimorfismo
 {
-    public abstract class Animal
+    public class Animal
     {
-        public abstract void Mover();
-
-        // Método virtual que puede ser sobrescrito en las clases derivadas
-        public virtual void Hablar()
+        public virtual void EmitirSonido()
         {
-            Console.WriteLine("El animal hace un sonido.");
+            Console.WriteLine("El animal emite un sonido.");
+        }
+
+        public virtual void Accion()
+        {
+            Console.WriteLine("El animal realiza una acción.");
         }
     }
 }
